@@ -1,15 +1,13 @@
 # -*- coding: UTF-8 -*-
-"""PyBank Homework Starter File."""
+
 
 # Dependencies
 import csv
 import os
 
 # Files to load and output (update with correct file paths)
-# budget_data_csv = os.path.join("Resources", "budget_data.csv")  # Input file path
 budget_data_csv = "PyBank/Resources/budget_data.csv"
 budget_analysis = "PyBank/analysis/budget_analysis.txt"
-# budget_analysis = os.path.join("analysis", "budget_analysis.txt")  # Output file path
 
 # Define variables to track the financial data
 total_months = 0
@@ -64,13 +62,13 @@ net_monthly_avg = sum(net_change_list) / len(net_change_list)
 
 # Generate the output summary
 output = (
-    f"Financial Analysis\n"
-    f"-----------------------------\n"
-    f"Total Months: {total_months}\n"
-    f"Total: ${total_net}\n"
-    f"Average Change: ${net_monthly_avg:.2f}\n"
-    f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]})\n"
-    f"Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})\n"
+    f"Financial Analysis\n\n"
+    f"-----------------------------\n\n"
+    f"Total Months: {total_months}\n\n"
+    f"Total: ${total_net}\n\n"
+    f"Average Change: ${net_monthly_avg:.2f}\n\n"
+    f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]})\n\n"
+    f"Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})\n\n"
 )
 
 # Print the output
